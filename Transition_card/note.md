@@ -1,0 +1,4 @@
+- card
+- position
+- linear-gradient
+- transitions
