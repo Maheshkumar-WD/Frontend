@@ -1,0 +1,39 @@
+html {
+    background-color: black;
+    font-family: sans-serif;
+}
+.app {
+    display: flex;
+    justify-content: center;
+}
+.app h1 {
+    color: white;
+    font-size: 54px;
+    border-bottom: 16px solid white;
+    position: relative;
+    top: 24px;
+    padding-bottom: 12px;
+}
+
+.app h1::before {
+    content: attr(data-text);
+    padding-bottom: 12px;
+    color: orangered;
+    position: absolute;
+    border-bottom: 16px solid orangered;
+    width: 100%;
+    overflow: hidden;
+    animation: anim 2s linear infinite both;
+    
+}
+
+@keyframes anim {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+    
+    
+}
